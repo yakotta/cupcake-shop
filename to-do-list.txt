@@ -2,7 +2,6 @@ To Do List
 
 Fix social media button shenanigans
 Adjust spacing between testimonials
-Bring the header/title closer to top of the page
 Number spinner doesn't work on mobile
 Create running order totals on sendorder.php page (use javascript) 
 finish image credits

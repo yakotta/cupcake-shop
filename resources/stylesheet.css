@@ -155,14 +155,12 @@ img.social  {
 }
 
 .testimonial-img {
-	height: 80px;
+	height: 85px;
 	border-radius: 100%;
-	padding: 6px;
-	vertical-align: middle;
+	margin: 15px;
 } 
 
 .testimonial-quote {
-	float: right;
 	vertical-align: middle;
 }
 
@@ -219,7 +217,7 @@ img.social  {
     }
     
     header h1 {
-	 	margin-top: 110px;
+	 	padding-top: 110px;
     }
 	
 	body:after {
@@ -257,10 +255,16 @@ img.social  {
 	border-color: #FB7F9F;
 }
 
-.panel-default.panel-invisible {
+.panel-default, .panel-invisible {
 	border-color: white;
 	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
     box-shadow: 0 0px 0px rgba(0,0,0,0);
+}
+
+.panel-default, .panel-invisible:after {
+	display: block;
+    content: " ";
+    clear: both;
 }
 
 .panel-default>.panel-heading {
