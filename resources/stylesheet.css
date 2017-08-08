@@ -155,12 +155,14 @@ img.social  {
 }
 
 .testimonial-img {
-	height: 85px;
+	height: 80px;
 	border-radius: 100%;
-	margin: 15px;
+	padding: 6px;
+	vertical-align: middle;
 } 
 
 .testimonial-quote {
+	float: right;
 	vertical-align: middle;
 }
 
@@ -217,7 +219,7 @@ img.social  {
     }
     
     header h1 {
-	 	padding-top: 110px;
+	 	margin-top: 110px;
     }
 	
 	body:after {
@@ -246,7 +248,8 @@ img.social  {
 	background-color: #fff4f7;
 }
 
-.btn-default:hover, .btn-default:active, .btn-default:focus {
+.btn-default:hover, 
+.btn-default:active {
 	border-color: #FB7F9F;
 	background-color: #fcccd9;
 }
@@ -255,16 +258,10 @@ img.social  {
 	border-color: #FB7F9F;
 }
 
-.panel-default, .panel-invisible {
+.panel-default.panel-invisible {
 	border-color: white;
 	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
     box-shadow: 0 0px 0px rgba(0,0,0,0);
-}
-
-.panel-default, .panel-invisible:after {
-	display: block;
-    content: " ";
-    clear: both;
 }
 
 .panel-default>.panel-heading {

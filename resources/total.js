@@ -1,15 +1,20 @@
-var quantity = $(".quantity");
-        
-var total = 0;
+/* global $*/
+$(document).ready(function(){
+    var product = $(".product");
 
-var prices = {
-    vulture: 3.5,
-    tooth: 4.25,
-    snaildog: 3.5,
-};
+    product.find("button").on("click",function(){
+        var total = 0;
+    
+        product.map(function(){
+            var price = $(this).find(".price");
+            price = Number(price.text().replace("$",""));
+            
+            var quantity = $(this).find(".quantity");
+            quantity = Number(quantity.val());
+            
+            total = total + (quantity * price);
+        });
 
-quantity.map(function(){
-    total = total + Number($(this).val()) * prices.val();
+        $(".total").html("$" + total.toFixed(2));
+    });
 });
-
-return(total)

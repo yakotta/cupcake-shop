@@ -101,8 +101,8 @@
                                         Please actually buy some cupcakes, you cheap bastard. 
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label for="vulture">Vulture's Nest, $3.50</label>
+                                    <div class="form-group product">
+                                        <label for="vulture">Vulture's Nest, <span class="price">$3.50</span></label>
                                         <div class="input-group number-spinner">
                                             <span class="input-group-btn data-dwn">
                                                 <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
@@ -114,8 +114,8 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label for="tooth">Tooth Faerie, $4.25</label>
+                                    <div class="form-group product">
+                                        <label for="tooth">Tooth Faerie, <span class="price">$4.25</span></label>
                                         <div class="input-group number-spinner">
                                             <span class="input-group-btn data-dwn">
                                                 <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
@@ -127,8 +127,8 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label for="snaildog">Snips, Snails, and Puppy Dog Tails, $3.50</label>
+                                    <div class="form-group product">
+                                        <label for="snaildog">Snips, Snails, and Puppy Dog Tails, <span class="price">$3.50</span></label>
                                         <div class="input-group number-spinner">
                                             <span class="input-group-btn data-dwn">
                                                 <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
@@ -140,7 +140,7 @@
                                         </div>
                                     </div>
                                     
-                                    Order total: <?=$total?>
+                                    Order total: <span class="total"></span>
                                 </div>
                             </div>
                         </div>
@@ -163,8 +163,8 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="resources/numberspinner.js" type="text/javascript"></script>
-        <script src="resources/total.js" type="text/javascript"></script>
         <script src="resources/submit.js" type="text/javascript"></script>
+        <script src="resources/total.js" type="text/javascript"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>

@@ -3,6 +3,6 @@ To Do List
 Fix social media button shenanigans
 Adjust spacing between testimonials
 Number spinner doesn't work on mobile
-Create running order totals on sendorder.php page (use javascript) 
+add update total button, show total on receiveorder page
 finish image credits
 Submit button is grey when you click it, make it pink or white
