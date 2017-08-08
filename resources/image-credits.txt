@@ -1,0 +1,25 @@
+
+Cupcake images
+    one: https://pixabay.com/en/cupcake-egg-easter-sweet-dessert-2236783/
+    two: https://pixabay.com/en/cupcake-sweet-pastry-muffin-icing-1264081/
+    three: https://pixabay.com/en/cake-stars-sweet-food-muffin-680260/ 
+
+
+Drips and Drops
+http://www.freepik.com/free-vector/sweet-honey-drips_759586.htm
+and https://www.vecteezy.com/vector-art/83402-honey-drip-background-vector
+
+
+Social media buttons
+    facebook: 
+    twitter: 
+    instagram: 
+    snapchat: 
+    yelp: 
+
+Testimonial pictures 
+    one: Dracula (1931) 
+    two: The Wizard of Oz (1939)
+    three: 
+
+JavaScript Number Spinner: https://bootsnipp.com/snippets/featured/bootstrap-number-spinner-on-click-hold
