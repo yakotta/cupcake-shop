@@ -1,8 +1,8 @@
 To Do List
 
-Fix social media button shenanigans
-Adjust spacing between testimonials
+Fix social media button shenanigans, add below the menu small and in black
 Number spinner doesn't work on mobile
-add update total button, show total on receiveorder page
+add on keyup function to running order total
+show total on receiveorder page
 finish image credits
 Submit button is grey when you click it, make it pink or white

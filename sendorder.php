@@ -2,10 +2,10 @@
 <html>
     <head>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
         <link type="text/css" href="resources/numberspinner.css" />
         <link rel="stylesheet" type="text/css" href="resources/stylesheet.css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -32,16 +32,16 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="customerinfo[firstname]" placeholder="First name" required>
+                                        <input type="text" class="form-control" name="customerinfo[firstname]" placeholder="First name" required />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="customerinfo[lastname]" placeholder="Last name" required>
+                                        <input type="text" class="form-control" name="customerinfo[lastname]" placeholder="Last name" required />
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="customerinfo[email]" placeholder="Email" required>
+                                        <input type="email" class="form-control" name="customerinfo[email]" placeholder="Email" required />
                                     </div>
                                     <div class="form-group">
-                                        <input type="phone" class="form-control" name="customerinfo[phonenumber]" placeholder="Phone number" required>
+                                        <input type="phone" class="form-control" name="customerinfo[phonenumber]" placeholder="Phone number" required />
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                             <span class="input-group-btn data-dwn">
                                                 <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                             </span>
-                                            <input id="vulture" name="flavorquant[vulture]" type="text" class="quantity form-control text-center" value="0" min="0" max="99">
+                                            <input id="vulture" name="flavorquant[vulture]" type="text" class="quantity form-control text-center" value="0" min="0" max="99" />
                                             <span class="input-group-btn data-up">
                                                 <button type="button" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                             </span>
@@ -120,7 +120,7 @@
                                             <span class="input-group-btn data-dwn">
                                                 <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                             </span>
-                                            <input id="tooth" name="flavorquant[tooth]" type="text" class="quantity form-control text-center" value="0" min="0" max="99">
+                                            <input id="tooth" name="flavorquant[tooth]" type="text" class="quantity form-control text-center" value="0" min="0" max="99" />
                                             <span class="input-group-btn data-up">
                                                 <button type="button" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                             </span>
@@ -133,7 +133,7 @@
                                             <span class="input-group-btn data-dwn">
                                                 <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                             </span>
-                                            <input id="snaildog" name="flavorquant[snaildog]" type="text" class="quantity form-control text-center" value="0" min="0" max="99">
+                                            <input id="snaildog" name="flavorquant[snaildog]" type="text" class="quantity form-control text-center" value="0" min="0" max="99 /">
                                             <span class="input-group-btn data-up">
                                                 <button type="button" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                             </span>
@@ -141,6 +141,7 @@
                                     </div>
                                     
                                     Order total: <span class="total"></span>
+                                    <input type="hidden" name="ordertotal" value="" />
                                 </div>
                             </div>
                         </div>

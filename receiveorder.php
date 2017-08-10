@@ -96,6 +96,9 @@
                                     Pickup Date: <?=$source['pickupdate']?> 
                                 </p>
                                 <p>
+                                    Order Total: <?=$source['ordertotal']?>
+                                </p>
+                                <p>
                                     Payment Method: <?=$source['payment']?>
                                 </p>
                             </div>

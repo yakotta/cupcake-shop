@@ -1,8 +1,8 @@
 /* global $*/
 $(document).ready(function(){
     var product = $(".product");
-
-    product.find("button").on("click",function(){
+    
+    var totalfunction = function(){
         var total = 0;
     
         product.map(function(){
@@ -15,6 +15,14 @@ $(document).ready(function(){
             total = total + (quantity * price);
         });
 
-        $(".total").html("$" + total.toFixed(2));
-    });
+        var finaltotal = "$" + total.toFixed(2);
+
+        $(".total").html(finaltotal);
+        
+        $("input[name='ordertotal']").val(finaltotal);
+    };
+
+    product.find("button").on("click",totalfunction);
+    
+    product.find("input").on("keyup",totalfunction);
 });
