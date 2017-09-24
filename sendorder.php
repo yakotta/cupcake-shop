@@ -3,6 +3,7 @@
     <head>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/resources/font-awesome-4.7.0/css/font-awesome.min.css" />
         <link type="text/css" href="resources/numberspinner.css" />
         <link rel="stylesheet" type="text/css" href="resources/stylesheet.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
@@ -14,6 +15,24 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="sendorder.php">Order Cupcakes</a>
+                <a href="map.html">Map</a>
+            </div>
+            <div class="slinks">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                </a>
+                <a href="https://snapchat.com" target="_blank">
+                    <i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i>
+                </a>
+                <a href="https://yelp.com" target="_blank">
+                    <i class="fa fa-yelp fa-lg" aria-hidden="true"></i>
+                </a>
             </div>
         </header>
         <div class="content">
@@ -98,7 +117,7 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="quantity-danger hide alert alert-danger" role="alert">
-                                        Please actually buy some cupcakes, you cheap bastard. 
+                                        Please actually buy some cupcakes, you cheap bastard. AND NO NEGATIVE NUMBERS.
                                     </div>
                                     
                                     <div class="form-group product">

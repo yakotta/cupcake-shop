@@ -1,3 +1,5 @@
+/* global $*/
+
 /** 
  * This function "waits" for the "document" to be "ready" before executing it
  * When the browser opens the page, it loads all the resources, but some resources
@@ -7,8 +9,7 @@
  
  // $ = jQuery
  
- 
-jQuery(document).ready(function(){
+$(document).ready(function(){
     /**
     // This is the broken down, step by step version of the below functionality
     var form = $("form");

@@ -40,28 +40,6 @@ header h1 {
     z-index: 1;
     font-weight: bold;
     font-size: 4em;
-    
-    /* the problem was these two padding and margin styles
-    you used margin-top: 140px
-    this created an effect on the browser called margin collapsing, read about it here:
-    https://stackoverflow.com/a/23788240/279147
-    
-    its ridiculous, but this apparently made sense to somebody at some point
-    but because of this, the margin on this element, is (in my view) incorrectly applied
-    to the parent tag, the body in this case, I dont know why it applied to the body though
-    cause its not the parent of the h1 element, its just a bit fucked up
-    
-    the solution was, to move the 140px margin top onto the padding-top instead and set explictly 
-    margin: 0, eliminating the margin, so it cannot trigger this margin collapse rule
-    
-    remember that when you use the margin or padding shorthands, it works like this:
-    padding: top right bottom left;
-    so we have: 
-    padding: 140px 0 0.75em 0
-    
-    Lets talk about this when you come to germany and I will show you an example
-    */
-    
     padding: 140px 0 0.75em 0;
  	margin: 0;
  	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
@@ -84,14 +62,13 @@ header h1 {
 	position: relative;
 	width: 50%;
 	margin: auto;
-	margin-top: 10px;
 	/* apply a padding at the bottom of the element, so it has a bit of empty space to put the drops */
 	padding-bottom: 50px;
 }
 
 section {
     color: black;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 form textarea.form-control {
@@ -149,11 +126,6 @@ form .submitbutton {
 	height: 400px;
 }
 
-img.social  {
-	height: 45px;
-	padding: 5px;
-}
-
 .testimonial-img {
 	height: 80px;
 	border-radius: 100%;
@@ -162,8 +134,8 @@ img.social  {
 } 
 
 .testimonial-quote {
-	float: right;
 	vertical-align: middle;
+	min-height: 80px;
 }
 
 .floated {
@@ -189,6 +161,30 @@ img.social  {
 
 .info-title {
 	text-align: center;
+}
+
+.slinks {
+	border-radius: 4px;
+	text-align: center;
+	padding: 10px;
+}
+
+.slinks a {
+	text-decoration: none;
+}
+
+i.fa.fa-facebook-square::before,
+i.fa.fa-facebook-square::after,
+i.fa.fa-instagram.fa-lg::before,
+i.fa.fa-instagram.fa-lg::after,
+i.fa.fa-twitter::before, 
+i.fa.fa-twitter::after,
+i.fa.fa-snapchat-ghost::before,
+i.fa.fa-snapchat-ghost::after,
+i.fa.fa-yelp::before,
+i.fa.fa-yelp::after {
+	color: #FB7F9F;
+	padding: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -219,7 +215,7 @@ img.social  {
     }
     
     header h1 {
-	 	padding-top: 120px;
+	 	padding-top: 110px;
     }
 	
 	body:after {
