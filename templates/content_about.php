@@ -1,3 +1,7 @@
+<?php
+$dataset = include("resources/dataset.php");
+?>
+
 <section class="info-title">
     <p class="panel-title">
         Learn more about our bakery!
@@ -25,47 +29,19 @@
     </p>
 </section>
 <section class="info">
-    <div class="panel panel-default panel-invisible clearfix">
-        <div class="floated">
-            <img class="testimonial-img" src="resources/testimonial-dracula.jpg" />
-        </div>
-        <div class="testimonial-quote">
-            <p>
-            Delicious! I make sure to drop in vhenever I am in town. 
-            </p>
-            <p>
-                &mdash; C. Dracula, Romania
-            </p>
-        </div>
-    </div>
-    <div class="panel panel-default panel-invisible clearfix">
-        <div class="floated">
-            <img class="testimonial-img" src="resources/testimonial-wickedwitch.jpg" />
-        </div>
-        <div class="testimonial-quote">
-            <p>
-                I order mine special, made without ANY water, and they
-                are SCRUMPTIOUS! What a wonderful business, and very 
-                accommodating of all sorts of dietary restrictions.
-            </p>
-            <p>
-                &mdash; Wicked Witch, the West
-            </p>
-        </div>
-    </div>
-    <div class="panel panel-default panel-invisible clearfix">
-        <div class="floated">
-            <img class="testimonial-img" src="resources/testimonial-sandy.jpg" />
-        </div>
-        <div class="testimonial-quote-container">
-            <div class="testimonial-quote">
+    <?php foreach($dataset["testimonials"] as $testimonial):?>
+        <div class="panel panel-default panel-invisible clearfix testimonial-quote">
+            <div class="floated">
+                <img class="testimonial-img" src="resources/images/testimonial-<?=$testimonial["photo"]?>" />
+            </div>
+            <div class="testimonial-text">
                 <p>
-                    Where's my dog?
+                <?=$testimonial["quote"]?> 
                 </p>
                 <p>
-                    &mdash; Sandy P., Coloma, CA
+                    &mdash; <?=$testimonial["name"]?>, <?=$testimonial["location"]?>
                 </p>
             </div>
         </div>
-    </div>
+    <?php endforeach?>
 </section>

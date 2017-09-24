@@ -2,4 +2,3 @@
 Number spinner doesn't work on mobile
 finish image credits
 Submit button is grey when you click it, make it pink or white
-Testimonial pictures are still a bit janky

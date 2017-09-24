@@ -1,12 +1,6 @@
 <!doctype html>
 <?php
-    $source = null;
-    
-    if(empty($_GET)) {
-        $source = $_POST;
-    } else {
-        $source = $_GET;
-    }
+    $source = $_POST;
     
     /*Here's how an email WOULD be sent if PHP wasn't,
         and i quote "wank"
@@ -64,7 +58,7 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        Pickup Date: <?=$source['pickupdate']?> 
+                        Pickup Date: <?=date("n/j/Y", strtotime($source['pickupdate']))?> 
                     </p>
                     <p>
                         Order Total: <?=$source['ordertotal']?>

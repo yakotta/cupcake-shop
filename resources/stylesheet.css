@@ -1,9 +1,9 @@
 @font-face {
 	font-family: 'pacifico';
-	src: url('pacifico.eot');
-	src: url('pacifico.eot?#iefix') format('embedded-opentype'),
-		url('pacifico.woff') format('woff'),
-		url('pacifico.ttf') format('truetype');
+	src: url('fonts/pacifico.eot');
+	src: url('fonts/pacifico.eot?#iefix') format('embedded-opentype'),
+		url('fonts/pacifico.woff') format('woff'),
+		url('fonts/pacifico.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -14,7 +14,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	position: relative;
 	min-height: 100vh;
-	background-image: url("drips.png");
+	background-image: url("images/drips.png");
 	background-size: 50%;
 	background-repeat: repeat-x;
 }
@@ -28,7 +28,7 @@ body:after{
     height: 25px;
     padding: 0;
     margin: 0;
-	background-image: url("drops.png");
+	background-image: url("images/drops.png");
 	background-size: 50%;
 	background-repeat: repeat-x;
 }
@@ -82,7 +82,7 @@ form .submitbutton {
 .cupcake {
 	border-top: 1px dashed #bababa;
 	padding-top: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 	width: 100%
 }
 
@@ -134,8 +134,12 @@ form .submitbutton {
 } 
 
 .testimonial-quote {
-	vertical-align: middle;
-	min-height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.testimonial-text {
+	margin-left: 5px;
 }
 
 .floated {
@@ -171,20 +175,27 @@ form .submitbutton {
 
 .slinks a {
 	text-decoration: none;
+	color: #FB7F9F;
+	margin: 10px;
 }
 
-i.fa.fa-facebook-square::before,
-i.fa.fa-facebook-square::after,
-i.fa.fa-instagram.fa-lg::before,
-i.fa.fa-instagram.fa-lg::after,
-i.fa.fa-twitter::before, 
-i.fa.fa-twitter::after,
-i.fa.fa-snapchat-ghost::before,
-i.fa.fa-snapchat-ghost::after,
-i.fa.fa-yelp::before,
-i.fa.fa-yelp::after {
+.input-group-addon i {
 	color: #FB7F9F;
-	padding: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #FB7F9F;
+	border-radius: 0px;
+}
+
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
 }
 
 @media (max-width: 1024px) {
@@ -225,7 +236,7 @@ i.fa.fa-yelp::after {
 	    height: 25px;
 	    padding: 0px;
 		margin: 0px;
-		background-image: url("drops.png");
+		background-image: url("images/drops.png");
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}

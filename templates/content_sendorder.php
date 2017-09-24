@@ -4,7 +4,7 @@
     </p>
 </section>
 <section id="orderform" class="info">
-    <form method="post" action="receiveorder.php">
+    <form method="post" action="/order-received">
         <div class="row">
             <div class="col-sm-6 col-xs-12">
                 <div class="panel panel-default">
@@ -35,7 +35,12 @@
                     <div class="panel-body">
                         <div class="form-group">
                             <label for="pickupdate">Pickup Date</label>
-                            <input type="date" class="form-control" name="pickupdate" id="pickupdate" min="<?=date('Y-m-d')?>" required>
+                            <div class="input-group date">
+                                <input type="text" class="form-control datepicker" name="pickupdate" id="pickupdate" required>
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
                         </div>
                         
                         <label id="paymentmethod">Payment Method</label>
