@@ -40,7 +40,7 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        Name: <?=$source['customerinfo']['lastname']?>, <?=$source['customerinfo']['firstname']?>
+                        Name: <?=$source['customerinfo']['lastname'].", ".$source['customerinfo']['firstname']?>
                     </p>
                     <p>
                         Phone: <?=$source['customerinfo']['phonenumber']?>

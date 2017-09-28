@@ -48,6 +48,7 @@ function render_template($template_name, $template_parameters=[])
 
 // Checks the paramters 
 function check_parameters ($source, $parameters=[]) {
+    var_dump_pre($parameters);
     foreach($parameters as $field) {
         if(!array_key_exists($field, $source) || empty($source[$field])){
             return $field;

@@ -21,7 +21,20 @@ switch($url) {
         break;
     
     case "order-received":
-        $template = render_template(__DIR__."/templates/content_receiveorder.php");
+        var_dump_pre($_POST);
+        if(check_parameters($_POST, [
+                "customerinfo",
+                "pickupdate",
+                "payment",
+                "flavorquant",
+                "chris's dick"
+        ]) === true) {
+            print("it works.");
+        } else {
+            print ("doesn't work.");
+        }
+        
+        // $template = render_template(__DIR__."/templates/content_receiveorder.php");
         break;
         
     default:
