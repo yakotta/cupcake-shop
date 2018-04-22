@@ -32,10 +32,10 @@
         </script>
     </p>
     <p>
-        We are located in the Desolation Wilderness, accessible 
+        We are located in California's Desolation Wilderness, accessible 
         via the Granite Lake Trail or the Pacific Crest Trail. 
-        From either trail, find the lightning-struck tree and 
-        follow the fossilized hoofprints into the tree,
+        Just find the lightning-struck tree and 
+        follow the fossilized hoofprints into the trees,
         listening for the sounds of our bone chimes and the smells
         of our oven. 
     </p>

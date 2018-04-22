@@ -14,7 +14,7 @@ $dataset = include("resources/dataset.php");
         to us over our childhood ouija board, carefully spelling out her carefully-guarded
         recipe for her famous Blueberry Brainstem Bundt Cake. We have since
         mini-fied and refined Grandmother's recipes and have let our creativity
-        run wild in creating our own, unique flavors.
+        run wild in creating our own unique flavors.
     </p> 
     <p>
         We opened our first location in the shade of the Sierra Nevadas
