@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         $(".total").html(finaltotal);
         
-        $("input[name='ordertotal']").val(finaltotal);
+        $("input[name='order_total']").val(finaltotal);
     };
 
     product.find("button").on("click",totalfunction);

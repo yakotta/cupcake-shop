@@ -2,28 +2,6 @@
 <?php
     $source = $_POST;
     
-    /*Here's how an email WOULD be sent if PHP wasn't,
-        and i quote "wank"
-        
-        here is the function you use to send an email
-        http://php.net/manual/en/function.mail.php
-    
-        function sendEmail($to, $from, $subject, $message){
-            $headers = implode("\n",[
-                "From: <$from>",
-                "Reply-To: <$from>",
-            ]);
-            
-            return mail($to, $subject, $message, $headers);
-        }
-    
-        $to = $source['customerinfo']['email'];
-        $from = 'pinkhamjenna@gmail.com';
-        $subject = 'Your Cadaverous Cupcakes Order';
-        $body = 'hello, mortal';
-
-        var_dump(sendEmail($to,$from,$subject,$body));
-    */
 ?>
 
 <section class="info-title">
@@ -32,21 +10,29 @@
     </p>
 </section>
 <section class="info">
+    <p>
+        Thanks for your order! If our mindless minions don't deliver a confirmation message to your inbox
+        soon, remember to check your spam folder! Sometimes they get lost along the way.
+    </p>
+    <p>
+        Your order details are printed below:
+    </p>
     <div class="row">
         <div class="col-md-12">
+            
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Customer Information</h3>
                 </div>
                 <div class="panel-body">
                     <p>
-                        Name: <?=$source['customerinfo']['lastname'].", ".$source['customerinfo']['firstname']?>
+                        Name: <?=$source['customer_lastname'].", ".$source['customer_firstname']?>
                     </p>
                     <p>
-                        Phone: <?=$source['customerinfo']['phonenumber']?>
+                        Phone: <?=$source['customer_phone']?>
                     </p>
                     <p>
-                        Email: <?=$source['customerinfo']['email']?>
+                        Email: <?=$source['customer_email']?>
                     </p>
                 </div>
             </div>
@@ -58,13 +44,13 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        Pickup Date: <?=date("n/j/Y", strtotime($source['pickupdate']))?> 
+                        Pickup Date: <?=date("n/j/Y", strtotime($source['pickup_date']))?> 
                     </p>
                     <p>
-                        Order Total: <?=$source['ordertotal']?>
+                        Order Total: <?=$source['order_total']?>
                     </p>
                     <p>
-                        Payment Method: <?=$source['payment']?>
+                        Payment Method: <?=$source['payment_method']?>
                     </p>
                 </div>
             </div>
@@ -79,17 +65,17 @@
                 <div class="panel-body">
                     <p>
                         <span class="badge">
-                            <?=$source['flavorquant']['vulture']?>
+                            <?=$source['flavor_vulture']?>
                         </span> Vulture's Nest
                     </p>
                     <p>
                         <span class="badge">
-                            <?=$source['flavorquant']['tooth']?>
+                            <?=$source['flavor_tooth']?>
                         </span> Tooth Faeire
                     </p>
                     <p>
                         <span class="badge">
-                            <?=$source['flavorquant']['snaildog']?>
+                            <?=$source['flavor_snaildog']?>
                         </span> Snips, Snails, and Puppy Dog Tails
                     </p>
                 </div>

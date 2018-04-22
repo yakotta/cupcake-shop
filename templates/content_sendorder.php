@@ -13,16 +13,16 @@
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="customerinfo[firstname]" placeholder="First name" required />
+                            <input type="text" class="form-control" name="customer_firstname" placeholder="First name" required />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="customerinfo[lastname]" placeholder="Last name" required />
+                            <input type="text" class="form-control" name="customer_lastname" placeholder="Last name" required />
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="customerinfo[email]" placeholder="Email" required />
+                            <input type="email" class="form-control" name="customer_email" placeholder="Email" required />
                         </div>
                         <div class="form-group">
-                            <input type="phone" class="form-control" name="customerinfo[phonenumber]" placeholder="Phone number" required />
+                            <input type="phone" class="form-control" name="customer_phone" placeholder="Phone number" required />
                         </div>
                     </div>
                 </div>
@@ -34,21 +34,21 @@
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
-                            <label for="pickupdate">Pickup Date</label>
+                            <label for="pickup_date">Pickup Date</label>
                             <div class="input-group date">
-                                <input type="text" class="form-control datepicker" name="pickupdate" id="pickupdate" required>
+                                <input type="text" class="form-control datepicker" name="pickup_date" id="pickup_date" required>
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
                         
-                        <label id="paymentmethod">Payment Method</label>
+                        <label id="payment_method">Payment Method</label>
                         
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <input type="radio" name="payment" value="Cash" aria-labelledby="paymentmethod" checked/>
+                                    <input type="radio" name="payment_method" value="Cash" aria-labelledby="payment_method" checked/>
                                 </span>
                                 <span class="form-control">Cash</span>
                             </div>
@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <input type="radio" name="payment" value="Paypal" aria-labelledby="paymentmethod"/>
+                                    <input type="radio" name="payment_method" value="Paypal" aria-labelledby="payment_method"/>
                                 </span>
                                 <span class="form-control">Paypal</span>
                             </div>
@@ -66,7 +66,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <input type="radio" name="payment" value="Blood of the Innocent" aria-labelledby="paymentmethod"/>
+                                    <input type="radio" name="payment_method" value="Blood of the Innocent" aria-labelledby="payment_method"/>
                                 </span>
                                 <span class="form-control">Blood of the Innocent</span>
                             </div>
@@ -93,7 +93,7 @@
                                 <span class="input-group-btn data-dwn">
                                     <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                 </span>
-                                <input id="vulture" name="flavorquant[vulture]" type="text" class="quantity form-control text-center" value="0" min="0" max="99" />
+                                <input id="vulture" name="flavor_vulture" type="text" class="quantity form-control text-center" value="0" min="0" max="99" />
                                 <span class="input-group-btn data-up">
                                     <button type="button" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                 </span>
@@ -106,7 +106,7 @@
                                 <span class="input-group-btn data-dwn">
                                     <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                 </span>
-                                <input id="tooth" name="flavorquant[tooth]" type="text" class="quantity form-control text-center" value="0" min="0" max="99" />
+                                <input id="tooth" name="flavor_tooth" type="text" class="quantity form-control text-center" value="0" min="0" max="99" />
                                 <span class="input-group-btn data-up">
                                     <button type="button" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                 </span>
@@ -119,7 +119,7 @@
                                 <span class="input-group-btn data-dwn">
                                     <button type="button" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                 </span>
-                                <input id="snaildog" name="flavorquant[snaildog]" type="text" class="quantity form-control text-center" value="0" min="0" max="99 /">
+                                <input id="snaildog" name="flavor_snaildog" type="text" class="quantity form-control text-center" value="0" min="0" max="99 /">
                                 <span class="input-group-btn data-up">
                                     <button type="button" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                 </span>
@@ -127,7 +127,7 @@
                         </div>
                         
                         Order total: <span class="total"></span>
-                        <input type="hidden" name="ordertotal" value="" />
+                        <input type="hidden" name="order_total" value="" />
                     </div>
                 </div>
             </div>
