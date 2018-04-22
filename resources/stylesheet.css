@@ -1,9 +1,9 @@
 @font-face {
 	font-family: 'pacifico';
-	src: url('/resources/fonts/pacifico.eot');
-	src: url('/resources/fonts/pacifico.eot?#iefix') format('embedded-opentype'),
-		url('/resources/fonts/pacifico.woff') format('woff'),
-		url('/resources/fonts/pacifico.ttf') format('truetype');
+	src: url('fonts/pacifico.eot');
+	src: url('fonts/pacifico.eot?#iefix') format('embedded-opentype'),
+		url('fonts/pacifico.woff') format('woff'),
+		url('fonts/pacifico.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -14,7 +14,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	position: relative;
 	min-height: 100vh;
-	background-image: url("/resources/images/drips.png");
+	background-image: url("images/drips.png");
 	background-size: 50%;
 	background-repeat: repeat-x;
 }
@@ -28,7 +28,7 @@ body:after{
     height: 25px;
     padding: 0;
     margin: 0;
-	background-image: url("/resources/images/drops.png");
+	background-image: url("images/drops.png");
 	background-size: 50%;
 	background-repeat: repeat-x;
 }
@@ -221,7 +221,7 @@ form .submitbutton {
 	    height: 25px;
 	    padding: 0px;
 		margin: 0px;
-		background-image: url("/resources/images/drops.png");
+		background-image: url("images/drops.png");
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}

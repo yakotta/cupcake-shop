@@ -4,7 +4,7 @@
     </p>
 </section>
 <section id="orderform" class="info">
-    <form method="post" action="/order-received">
+    <form method="post" action="<?=rewrite_url("/order-received")?>">
         <div class="row">
             <div class="col-sm-6 col-xs-12">
                 <div class="panel panel-default">

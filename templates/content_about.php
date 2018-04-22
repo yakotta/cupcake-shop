@@ -32,7 +32,7 @@ $dataset = include("resources/dataset.php");
     <?php foreach($dataset["testimonials"] as $testimonial):?>
         <div class="panel panel-default panel-invisible clearfix testimonial-quote">
             <div class="floated">
-                <img class="testimonial-img" src="resources/images/testimonial-<?=$testimonial["photo"]?>" />
+                <img class="testimonial-img" src="<?=rewrite_url("/resources/images/testimonial-{$testimonial["photo"]}")?>" />
             </div>
             <div class="testimonial-text">
                 <p>

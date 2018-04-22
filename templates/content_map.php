@@ -36,7 +36,7 @@
         via the Granite Lake Trail or the Pacific Crest Trail. 
         From either trail, find the lightning-struck tree and 
         follow the fossilized hoofprints into the tree,
-        listeing for the sounds of our bone chimes and the smells
+        listening for the sounds of our bone chimes and the smells
         of our oven. 
     </p>
     <p>

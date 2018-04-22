@@ -10,7 +10,7 @@ $dataset = include("resources/dataset.php");
 <?php foreach($dataset["cupcakes"] as $cupcake): ?>
     <section class="cupcake">
         <div class="productimage">
-            <img src="resources/images/<?=$cupcake["photo"]?>" />
+            <img src="<?=rewrite_url("/resources/images/{$cupcake["photo"]}")?>" />
         </div>
         <div class="productinfo">
             <h2><?=$cupcake["name"]?></h2>
