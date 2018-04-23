@@ -1,9 +1,4 @@
 <!doctype html>
-<?php
-    $source = $_POST;
-    
-?>
-
 <section class="info-title">
     <p class="panel-title">
         Order Received
@@ -19,20 +14,19 @@
     </p>
     <div class="row">
         <div class="col-md-12">
-            
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Customer Information</h3>
                 </div>
                 <div class="panel-body">
                     <p>
-                        Name: <?=$source['customer_lastname'].", ".$source['customer_firstname']?>
+                        Name: <?=$_POST['customer_lastname'].", ".$_POST['customer_firstname']?>
                     </p>
                     <p>
-                        Phone: <?=$source['customer_phone']?>
+                        Phone: <?=$_POST['customer_phone']?>
                     </p>
                     <p>
-                        Email: <?=$source['customer_email']?>
+                        Email: <?=$_POST['customer_email']?>
                     </p>
                 </div>
             </div>
@@ -44,13 +38,13 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        Pickup Date: <?=date("n/j/Y", strtotime($source['pickup_date']))?> 
+                        Pickup Date: <?=date("n/j/Y", strtotime($_POST['pickup_date']))?> 
                     </p>
                     <p>
-                        Order Total: <?=$source['order_total']?>
+                        Order Total: <?=$_POST['order_total']?>
                     </p>
                     <p>
-                        Payment Method: <?=$source['payment_method']?>
+                        Payment Method: <?=$_POST['payment_method']?>
                     </p>
                 </div>
             </div>
@@ -65,17 +59,17 @@
                 <div class="panel-body">
                     <p>
                         <span class="badge">
-                            <?=$source['flavor_vulture']?>
+                            <?=$_POST['flavor_vulture']?>
                         </span> Vulture's Nest
                     </p>
                     <p>
                         <span class="badge">
-                            <?=$source['flavor_tooth']?>
+                            <?=$_POST['flavor_tooth']?>
                         </span> Tooth Faeire
                     </p>
                     <p>
                         <span class="badge">
-                            <?=$source['flavor_snaildog']?>
+                            <?=$_POST['flavor_snaildog']?>
                         </span> Snips, Snails, and Puppy Dog Tails
                     </p>
                 </div>
@@ -89,10 +83,10 @@
                 <div class="panel-body">
                     <p>
                         <?php
-                        if (empty($source['requests'])) {
+                        if (empty($_POST['requests'])) {
                             print("None");
                         } else {
-                            print($source['requests']);
+                            print($_POST['requests']);
                         }
                         ?>
                     </p>

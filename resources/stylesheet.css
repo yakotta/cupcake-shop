@@ -153,6 +153,10 @@ form .submitbutton {
 	width: 100%
 }
 
+.info a {
+	color: #FB7F9F;
+}
+
 .info p {
 	text-align: justify;
 }
